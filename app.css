@@ -1,0 +1,42 @@
+html,body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: gray;
+}
+
+#box{
+	display: table;
+    position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#appBox{
+	display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+#board{
+    width: 400px;
+    display: inline-block;
+    height: 400px;	
+    font-size: 24px;
+}
+.box{
+	margin: 0px auto;
+    width: 33.3%;
+    height: 33.3%;
+    font-size: 59px;
+    font-weight: 700;
+    float: left;
+    cursor: pointer;
+    border: 1px solid;
+}
+#winner{
+	position: absolute;
+    width: 100%;
+    font-size: 34px;
+    margin-top: -65px;
+}

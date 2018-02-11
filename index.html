@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html charset=utf-8" />
+	<meta name="content-language" content="tr" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>XOX Game</title>
+	<link rel="stylesheet" type="text/css" href="app.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+
+<body>
+
+
+<div id="box">
+
+<div id="appBox">
+	<p id="winner" v-show="!isPlaying"><span v-html="now === 0 ? 'O' : 'X'"></span> is winner</p>
+	<div id="board">
+		<button v-for="(box,keyNum) in board" class="box" v-on:click="boxClick(keyNum)">{{box}}</button>
+	</div>
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
