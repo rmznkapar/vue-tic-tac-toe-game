@@ -15,7 +15,7 @@
 <div id="box">
 
 <div id="appBox">
-	<p id="winner" v-show="!isPlaying"><span v-html="now === 0 ? 'O' : 'X'"></span> is winner</p>
+	<p id="winner" v-show="!isPlaying"><span v-html="now ? 'O' : 'X'"></span> is winner</p>
 	<div id="board">
 		<button v-for="(box,keyNum) in board" class="box" v-on:click="boxClick(keyNum)">{{box}}</button>
 	</div>
